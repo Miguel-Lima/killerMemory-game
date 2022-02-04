@@ -3,3 +3,27 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+body {
+    height: 100vh;
+    display: flex;
+}
+
+#cardboard {
+    width: 640px;
+    height: 640px;
+    margin: auto;
+    display: flex;
+}
+
+.memory-card {
+    width: 30%;
+    height: 33%;
+}
+
+.front-face,
+.back-face {
+    width: 100%;
+    height: 100%;
+    background: black;
+}
