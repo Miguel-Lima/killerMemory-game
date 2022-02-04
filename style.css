@@ -25,6 +25,7 @@ body {
     width: 25%;
     height: 33%;
     margin: 5px;
+    transform-style: preserve-3d;
     position: relative;
 }
 
@@ -42,4 +43,8 @@ body {
     height: 100%;
     background: black;
     position: absolute;
+}
+
+.front-face {
+    transform: rotateY(180deg);
 }
