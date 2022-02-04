@@ -23,21 +23,34 @@ cardBoard.innerHTML = cardHTML + cardHTML;
 
 const cards = document.querySelectorAll(".memory-card");
 let firstCard, secondCard;
+let lockCards = false;
 
 function flipCard() {
-  this.classList.add('flip')
+  if (lockCards) return false;
+  this.classList.add("flip");
 
-  if(!firstCard) {
+  if (!firstCard) {
     firstCard = this;
-
     return false;
   }
-  
+
   secondCard = this;
 
+  checkForMatch();
 }
 
 function checkForMatch() {
+  let isMatch = firstCard.dataset.card === secondCard.dataset.card;
+
+  !isMatch ? disableCards() : true;
+}
+
+function disableCards() {
+  
+  setTimeout(() => {
+    firstCard.classList.remove('flip');
+    secondCard.classList.remove('flip');
+  }, 1000)
   
 }
 
