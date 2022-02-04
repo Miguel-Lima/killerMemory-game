@@ -7,18 +7,26 @@
 body {
     height: 100vh;
     display: flex;
-    /* background-image: url(https://wallup.net/wp-content/uploads/2018/03/23/560902-Killer-murder.jpg); */
     background-image: url(https://cdn.wallpapersafari.com/99/12/dMLH9F.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    /* background-repeat: no-repeat;
+    background-size: cover; */
+}
+
+.title {
+    color: white;
+    top: 50px;
+    left: 90vh;
+    position:fixed;
+    text-align: center;
 }
 
 #cardboard {
-    width: 640px;
+    width: 660px;
     height: 640px;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
+    /* padding: 10px; */
 }
 
 .memory-card {
