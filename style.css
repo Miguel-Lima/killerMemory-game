@@ -21,6 +21,7 @@ body {
     width: 25%;
     height: 33%;
     margin: 5px;
+    position: relative;
 }
 
 .front-face,
@@ -28,4 +29,5 @@ body {
     width: 100%;
     height: 100%;
     background: black;
+    position: absolute;
 }
