@@ -46,10 +46,13 @@ function checkForMatch() {
 }
 
 function disableCards() {
-  
+  lockCards = true;
+
   setTimeout(() => {
     firstCard.classList.remove('flip');
     secondCard.classList.remove('flip');
+
+    [firstCard, secondCard, lockCards] = [null, null, false];
   }, 1000)
   
 }
