@@ -42,7 +42,7 @@ function flipCard() {
 function checkForMatch() {
   let isMatch = firstCard.dataset.card === secondCard.dataset.card;
 
-  !isMatch ? disableCards() : resetCards();
+  !isMatch ? disableCards() : resetCards(isMatch);
 }
 
 function disableCards() {
@@ -56,7 +56,11 @@ function disableCards() {
   }, 1000)
 }
 
-function resetCards() {
+function resetCards(isMatch = false) {
+  if(isMatch) {
+    firstCard.removeEventListener('click', flipCard);
+    secondCard.removeEventListener('click', flipCard);
+  }
   [firstCard, secondCard, lockCards] = [null, null, false];
 }
 
