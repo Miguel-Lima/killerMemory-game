@@ -8,6 +8,7 @@ body {
     height: 100vh;
     display: flex;
     background-image: url(https://cdn.wallpapersafari.com/99/12/dMLH9F.jpg);
+    font-family: 'Comforter', cursive;
     /* background-repeat: no-repeat;
     background-size: cover; */
 }
@@ -15,9 +16,10 @@ body {
 .title {
     color: white;
     top: 50px;
-    left: 90vh;
+    left: 82vh;
     position:fixed;
     text-align: center;
+    font-size: 4.5rem;
 }
 
 #cardboard {
@@ -27,6 +29,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     /* padding: 10px; */
+    cursor: pointer;
 }
 
 .memory-card {
